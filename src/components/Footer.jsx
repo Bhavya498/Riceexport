@@ -11,7 +11,9 @@ export default function Footer() {
             <footer className="footer" style={{ backgroundImage: `url(${homeimg})` }}>
                 <div className="footer-container">
                     <div className="footer-column">
+                        <a href="/" className="footer-logo-link">
                         <img src={logo3} alt="Logo" className="footer-logo" />
+                        </a>
                         <p className="footer-desc">
                             Hemant Food Grain Pvt. Ltd. is one of the leading Miller, Processor and Basmati<br />
                             Manufacturer, Supplier, Exporter in India

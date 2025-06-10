@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import homeimg from "../Images/homeimg.webp";
 import rice1 from "../Images/rice1.webp";
 import rice2 from "../Images/rice2.webp";
@@ -8,8 +8,23 @@ import rice5 from "../Images/rice5.webp";
 import rice6 from "../Images/rice6.webp";
 import rice7 from "../Images/rice7.webp";
 import golden from "../Images/golden.webp";
-import leaf from "../Images/leaf.webp"; 
-import gold from "../Images/gold.jpeg";  
+import leaf from "../Images/leaf.webp";
+import gold from "../Images/gold.jpeg";
+import acc1 from "../Images/acc1.jpg";
+import acc2 from "../Images/acc2.jpg";
+import acc3 from "../Images/acc3.jpg";
+import acc4 from "../Images/acc4.png";
+import acc5 from "../Images/acc5.jpg";
+import acc6 from "../Images/acc6.png";
+import acc7 from "../Images/acc7.jpg";
+import pro1 from "../Images/pro1.jpg";
+import pro2 from "../Images/pro2.jpg";
+import pro3 from "../Images/pro3.jpg";
+import pro4 from "../Images/pro4.jpg";
+import pro5 from "../Images/pro5.png";
+import pro6 from "../Images/pro6.jpg";
+import pro7 from "../Images/pro7.jpg";
+import pro8 from "../Images/pro8.jpg";
 
 
 export default function About() {
@@ -27,7 +42,7 @@ export default function About() {
             </div>
             <br /><br /><br /><br />
 
-            <section className="who-we-are">
+            <section className="who-we-are" id="who">
                 <div className="who-left">
                     <div className="main-img">
                         <img src={rice1} alt="Rice Scoop" />
@@ -40,12 +55,13 @@ export default function About() {
                 <div className="who-right">
                     <div className="heading">
                         <p className="sub-title">
-                            <i className="fas fa-seedling"></i> WELCOME TO AARUSH FOOD GRAINS PVT. LIMITED
+                            <i className="fas fa-seedling"></i> WELCOME TO Hemant FOOD GRAINS PVT. LIMITED
                         </p>
                         <h2>Who We Are</h2>
                     </div>
                     <p className="description">
-                        Aarush Food Grain Pvt. Ltd. is one of the leading Miller, Processor and Exporter of Basmati and Non-Basmati Rice i.e., 1121 Basmati, Pusa Basmati, 1509 Basmati, Traditional Basmati, 1401 Basmati, Sugandha, Sharbati, PR11/14, Parmal Rice varieties having two Rice Milling & Processing units, one in Pakhana, Dist. Karnal, Haryana, India. Our Quality meets the customer’s needs & expectations. We are focused towards customer satisfaction from the beginning.
+                        <strong> “HEMANT EXPORT” </strong>is a reputed & reliable merchant exporter, established and backed by 2nd generation business house. We believe that business grows on trust along with commitment & passion. We export products with a complete check on quality, vendor scrutinization and traceability. We offer products to our clients with a complete check on all parameters of products giving detailed insights into specifications. Our experienced team is equipped to source the best products at the best price in the best timelines.
+
                     </p>
 
                     <div className="features">
@@ -65,161 +81,102 @@ export default function About() {
 
             <div className="about-section">
                 <p>
-                    As we are known as the Basmati rice manufacturer and exporter in India, the mill is best equipped for hygienic rice warehouses.
-                    As we are certified with <strong>ISO 9001:2015, ISO 22000:2018, HACCP, GMP, HALAL, KOSHER, FSSAI, REX, and USFDA</strong> we provide
-                    advanced processing, quality control, packaging, and warehouse needs which capable to accomplish the requirements of clients worldwide.
-                    We have a final production capacity of <strong>200 MT per day/ 5000 MT per month</strong> from 03 automatic production units and have amazing
-                    storage facilities of <strong>25,000 MT</strong>. The capacity of the storage unit helps us to stock rice with hygienic conditions and helps us
-                    to complete targets while prioritizing timely deliverables.
+                    <strong> “HEMANT EXPORT” </strong>, is a perfect blend of experienced professionals with solid experience of technical, commercial, trading, logistics and financial background. What sets “HEMANT EXPORT”, to stand out is that, we provide a price advantage, personalized service and also encourage orders of all sizes and volumes.
+
                 </p>
 
                 <div className="circle-divider"></div>
 
                 <p>
-                    Our aim is to satisfy our clients with the finest quality of each grain with the best services to meet international standards.
-                    Internationally also we are appreciated for our superfine kernels, high quality, freshness, and longer shelf life rice also with amazing
-                    volumes in terms of purity, flavor, delectable taste & refreshing aroma. Also, we are exporting the finest Indian rice to
-                    <strong> Europe, the USA, Canada, Saudi Arabia, Iraq, Erbil, Israel, Lebanon, Jordan, Yemen, Australia, Kuwait, Oman, Bahrain, Egypt, Turkey, Libya, Syria, Kyrgyzstan, Belarus</strong> & many more.
+                    We offer deep insights into product specifications and provide constant feedback to our clients and suppliers on its availability. We also provide tracking assistance for whereabouts of the containers and distances from the destination. We are committed to provide one-stop solution for all the requirements of our clients from sourcing to shipment and from logistics support to delivery.
+                </p>
+                <p>
+                    We have experience in sourcing, merchandising, buying & trading commodities across product categories. As a leading merchant exporter, we are a team of passionate business professionals with hands-on approach towards business. We are committed to keep up to the promises & deliver beyond satisfaction.
                 </p>
             </div>
 
-            <div className="table-container">
-                <table className="info-table">
-                    <tbody>
-                        <tr>
-                            <th>Nature of Business</th>
-                            <td>Manufacturer, Processor & Exporter</td>
-                        </tr>
-                        <tr>
-                            <th>Year of Establishment</th>
-                            <td>1998</td>
-                        </tr>
-                        <tr>
-                            <th>Products</th>
-                            <td>Basmati & Non Basmati Rice</td>
-                        </tr>
-                        <tr>
-                            <th>Factory Address</th>
-                            <td>
-                                Galib kheri road, village pakhana, taraori district karnal, haryana, India. Pin:- 132116
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Production Line</th>
-                            <td>03 (Automatic)</td>
-                        </tr>
-                        <tr>
-                            <th>Production Capacity</th>
-                            <td>4000 Metric Tons Monthly</td>
-                        </tr>
-                        <tr>
-                            <th>No. of Warehouse</th>
-                            <td>04</td>
-                        </tr>
-                        <tr>
-                            <th>Warehouse Capacity</th>
-                            <td>25000 Metric Tons</td>
-                        </tr>
-                        <tr>
-                            <th>Annual Turnover</th>
-                            <td>140 Crore USD Approx.</td>
-                        </tr>
-                        <tr>
-                            <th>Export Percentage</th>
-                            <td>75%</td>
-                        </tr>
-                        <tr>
-                            <th>Main Overseas Market</th>
-                            <td>
-                                Egypt, KSA, USA, Europe, Iraq, Greece, Germany, Jordan, Malaysia, Turkey, Oman, Qatar, Kuwait
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Nearest Port</th>
-                            <td>Mundra Port, Gujarat (India)</td>
-                        </tr>
-                        <tr>
-                            <th>Ownership Type</th>
-                            <td>Director Firm</td>
-                        </tr>
-                        <tr>
-                            <th>PAN</th>
-                            <td>AAUCA2641N</td>
-                        </tr>
-                        <tr>
-                            <th>TAN</th>
-                            <td>	RTKA18280D</td>
-                        </tr>
-                        <tr>
-                            <th>IEC</th>
-                            <td>AAUCA2641N</td>
-                        </tr>
-                        <tr>
-                            <th>RCMC NO</th>
-                            <td>213998</td>
-                        </tr>
-                        <tr>
-                            <th>GSTIN</th>
-                            <td>	06AAUCA2641N1Z8</td>
-                        </tr>
-                        <tr>
-                            <th>USFDA No.</th>
-                            <td>13740288114</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
 
-            <div className="table-container">
-                <h2 className="table-heading">Payment, Loading & Delivery Conditions</h2>
-                <table className="info-table">
-                    <tbody>
-                        <tr>
-                            <th>Payment Condition</th>
-                            <td>30% Advance & balance on loading (FOR).</td>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td>30% Advance & balance on delivery at Indian Port (FOB)</td>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td>30% Advance & balance against documents (CIF).</td>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td>100% at sight LC from prime international bank (CIF).</td>
-                        </tr>
 
-                        <tr>
-                            <th>Loading Condition</th>
-                            <td>Truckload</td>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td>Container (Factory Stuffing)</td>
-                        </tr>
+            <section className="accreditation-section">
+                <h2>ACCREDITATION</h2>
+                <div className="accreditation-logos">
+                    <img src={acc1} alt="FIEO" />
+                    <img src={acc2} alt="ISO Certified" />
+                    <img src={acc3} alt="APEDA" />
+                    <img src={acc4} alt="IAF" />
+                    <img src={acc5} alt="MSME" />
+                    <img src={acc6} alt="DGFT" />
+                    <img src={acc7} alt="REX European Commission" />
+                </div>
+            </section>
 
-                        <tr>
-                            <th>Delivery Condition</th>
-                            <td>FOR</td>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td>FOB</td>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td>CIF</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <section class="special-propositions">
+                <h2>SPECIAL PROPOSITIONS</h2>
+                <div class="props-grid">
+
+                    <div class="prop-card">
+                        <img src={pro1} alt="Customer Satisfaction" />
+                        <div>
+                            <strong>Customer satisfaction:</strong> Customer satisfaction is the basic criteria and essential part of our company leading to build the best business relationship in future by way of providing the best possible service.
+                        </div>
+                    </div>
+
+                    <div class="prop-card">
+                        <img src={pro2} alt="Best Pricing" />
+                        <div>
+                            <strong>Best pricing:</strong> Our company provides the best pricing to our customers for accommodating and fulfilling the requirements of the customer in most convenient and efficient manner.
+                        </div>
+                    </div>
+
+                    <div class="prop-card">
+                        <img src={pro3} alt="Excellent Service" />
+                        <div>
+                            <strong>Excellent service:</strong> We provide state-of-art customer services and it has always been our first priority and essential part of our company, where we work for solving every problems of our customer as fast as possible.
+                        </div>
+                    </div>
+
+                    <div class="prop-card">
+                        <img src={pro4} alt="Commitment" />
+                        <div>
+                            <strong>Commitment:</strong> Commitment is a legal promise to our customer reflecting our complete dedication for building the best business relationship in all terms.
+                        </div>
+                    </div>
+
+                    <div class="prop-card">
+                        <img src={pro5} alt="Good Quality Product" />
+                        <div>
+                            <strong>Good quality product:</strong> Our organization works for providing best quality products. Our products are verified for quality by institutes like SGS, Geo Chem and various govt. Approved agencies.
+                        </div>
+                    </div>
+
+                    <div class="prop-card">
+                        <img src={pro6} alt="Customer Relationship" />
+                        <div>
+                            <strong>Customer relationship:</strong> Our company believes in building the customer relationship, by having the best interaction with the customers leading to strengthening of business relations in future.
+                        </div>
+                    </div>
+
+                    <div class="prop-card">
+                        <img src={pro7} alt="Business Ethics" />
+                        <div>
+                            <strong>Ethics:</strong> The term business ethics refers to business morals, practices and policies that guide decision-making and managing controversies or issues. These principles govern every aspect of the company's operations, including its interaction with the government and other businesses, its treatment of its employees and its relationship with its customers.
+                        </div>
+                    </div>
+
+                    <div class="prop-card">
+                        <img src={pro8} alt="Excellence" />
+                        <div>
+                            <strong>Excellence:</strong> Excellence is being able to perform on customer’s expectation over and over again. Excellence is not to have a single happy customer for short term but being able to have all our customer be happy as long as we deal.
+                        </div>
+                    </div>
+
+                </div>
+            </section>
 
             <section class="testimonial-section">
                 <div class="section-header">
                     <div class="tagline">
-                     <img src={leaf} alt="Wheat Icon" className="icon" />
+                        <img src={leaf} alt="Wheat Icon" className="icon" />
                         <span>CLIENT TESTIMONIAL</span>
                         <hr />
                     </div>
@@ -228,7 +185,7 @@ export default function About() {
             </section>
 
             <section class="testimonial-cards">
-                
+
                 <div class="card">
                     <h3>Anono Wiliam</h3>
                     <hr />
@@ -258,70 +215,70 @@ export default function About() {
                 </div>
             </section>
 
-             <section className="products-section">
-                            <img src={leaf} alt="Wheat Icon" className="icon" />
-                            <div className="section-header">
-                                <p className="tagline">INDIAN RICE VARIETIES WE OFFER</p>
-                                <h2>Our Products Range</h2>
+            <section className="products-section">
+                <img src={leaf} alt="Wheat Icon" className="icon" />
+                <div className="section-header">
+                    <p className="tagline">INDIAN RICE VARIETIES WE OFFER</p>
+                    <h2>Our Products Range</h2>
+                </div>
+
+                <div className="product-list">
+                    <a href="/basmati" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={rice3} alt="1121 Basmati Rice" />
                             </div>
-            
-                            <div className="product-list">
-                                <a href="/basmati" className="product-card">
-                                    <div className="product-card">
-                                        <div className="product-img">
-                                            <img src={rice3} alt="1121 Basmati Rice" />
-                                        </div>
-                                        <div className="product-label">1121 Basmati Rice</div>
-                                    </div>
-                                </a>
-            
-                                <a href="/sella" className="product-card">
-                                    <div className="product-card">
-                                        <div className="product-img">
-                                            <img src={rice4} alt="1121 Sella Basmati Rice" />
-                                        </div>
-                                        <div className="product-label">1121 Sella Basmati Rice</div>
-                                    </div>
-                                </a>
-            
-                                <a href="/golden" className="product-card">
-                                    <div className="product-card">
-                                        <div className="product-img">
-                                            <img src={golden} alt="GoldenBasmati Rice" />
-                                        </div>
-                                        <div className="product-label">Golden Basmati Rice</div>
-                                    </div>
-                                </a>
-            
-                                <a href="/steam" className="product-card">
-                                <div className="product-card">
-                                    <div className="product-img">
-                                        <img src={rice6} alt="1401 Basmati Rice" />
-                                    </div>
-                                    <div className="product-label">1509 Basmati Rice</div>
-                                </div>
-                                </a>
-            
-                                <a href="/sell" className="product-card">
-                                <div className="product-card">
-                                    <div className="product-img">
-                                        <img src={rice7} alt="Sella Basmati Rice" />
-                                    </div>
-                                    <div className="product-label">1509 Sella Basmati Rice</div>
-                                </div>
-                                </a>
-            
-                                <a href="/gold" className="product-card">
-                                <div className="product-card">
-                                    <div className="product-img">
-                                        <img src={gold} alt="Golden Rice" />
-                                    </div>
-                                    <div className="product-label">Golden Rice</div>
-                                </div>
-                                </a>
-            
+                            <div className="product-label">1121 Basmati Rice</div>
+                        </div>
+                    </a>
+
+                    <a href="/sella" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={rice4} alt="1121 Sella Basmati Rice" />
                             </div>
-                        </section>
+                            <div className="product-label">1121 Sella Basmati Rice</div>
+                        </div>
+                    </a>
+
+                    <a href="/golden" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={golden} alt="GoldenBasmati Rice" />
+                            </div>
+                            <div className="product-label">Golden Basmati Rice</div>
+                        </div>
+                    </a>
+
+                    <a href="/steam" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={rice6} alt="1401 Basmati Rice" />
+                            </div>
+                            <div className="product-label">1509 Basmati Rice</div>
+                        </div>
+                    </a>
+
+                    <a href="/sell" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={rice7} alt="Sella Basmati Rice" />
+                            </div>
+                            <div className="product-label">1509 Sella Basmati Rice</div>
+                        </div>
+                    </a>
+
+                    <a href="/gold" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={gold} alt="Golden Rice" />
+                            </div>
+                            <div className="product-label">Golden Rice</div>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
 
         </div>
     )

@@ -33,23 +33,32 @@ const Home = () => {
         className="home"
         style={{ backgroundImage: `url(${homeimg})` }}
       >
+        {/* Overlay for better text readability */}
+        <div className="overlay"></div>
+
+        {/* Social Icons */}
         <div className="social-icons">
-          <a href="#" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
-          <a href="#" aria-label="Email"><i className="fas fa-envelope"></i></a>
-          <a href="#" aria-label="Phone"><i className="fas fa-phone-alt"></i></a>
-          <a href="#" aria-label="Send"><i className="fas fa-paper-plane"></i></a>
+          <a href="https://wa.me/919328899372" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i className="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:hemant@hemantexport.com" aria-label="Email">
+            <i className="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+919328899372" aria-label="Phone">
+            <i className="fas fa-phone-alt"></i>
+          </a>
+          <a href="mailto:yourmail@example.com?subject=Inquiry&body=Hi, I would like to know more..." aria-label="Send">
+            <i className="fas fa-paper-plane"></i>
+          </a>
         </div>
 
+        {/* Home Content */}
         <div className="home-content">
-          <h1>Experience the Heritage of Fine <br /> Basmati Rice</h1>
-          <a href="/contact" className="contact-btn btn">CONTACT US</a>
+          <h1>Experience the Heritage of<br /><span>Basmati Rice</span></h1>
+          <a href="/contact" className="contact-btn">CONTACT US</a>
         </div>
-
-        {/* <div className="carousel-arrows">
-          <button className="arrow left" aria-label="Previous Slide">&lt;</button>
-          <button className="arrow right" aria-label="Next Slide">&gt;</button>
-        </div> */}
       </section>
+
 
       <section className="features">
         <div className="feature-card">
@@ -97,10 +106,10 @@ const Home = () => {
           The best way to be ready for future is to invest in it
         </div>
 
-      
-          <a href="tel:+919328899372" className="contact-link">
-            <FaPhoneAlt /> +91 9328899372
-          </a>
+
+        <a href="tel:+919328899372" className="contact-link">
+          <FaPhoneAlt /> +91 9328899372
+        </a>
       </div>
 
       <section className="who-we-are" id="who">
@@ -121,7 +130,8 @@ const Home = () => {
             <h2>Who We Are</h2>
           </div>
           <p className="description">
-            Heamant Food Grain Pvt. Ltd. is one of the leading Miller, Processor and Exporter of Basmati and Non-Basmati Rice i.e., 1121 Basmati, Pusa Basmati, 1509 Basmati, Traditional Basmati, 1401 Basmati, Sugandha, Sharbati, PR11/14, Parmal Rice varieties having two Rice Milling & Processing units, one in Pakhana, Dist. Anand Gujrat, India. Our Quality meets the customer’s needs & expectations. We are focused towards customer satisfaction from the beginning.
+            <strong> “HEMANT EXPORT” </strong>is a reputed & reliable merchant exporter, established and backed by 2nd generation business house. We believe that business grows on trust along with commitment & passion. We export products with a complete check on quality, vendor scrutinization and traceability. We offer products to our clients with a complete check on all parameters of products giving detailed insights into specifications. Our experienced team is equipped to source the best products at the best price in the best timelines.
+
           </p>
 
           <div className="features">
@@ -141,76 +151,76 @@ const Home = () => {
 
 
       <section className="products-section">
-                     <img src={leaf} alt="Wheat Icon" className="icon" />
-                     <div className="section-header">
-                         <p className="tagline">INDIAN RICE VARIETIES WE OFFER</p>
-                         <h2>Our Products Range</h2>
-                     </div>
-     
-                     <div className="product-list">
-                         <a href="/basmati" className="product-card">
-                             <div className="product-card">
-                                 <div className="product-img">
-                                     <img src={rice3} alt="1121 Basmati Rice" />
-                                 </div>
-                                 <div className="product-label">1121 Basmati Rice</div>
-                             </div>
-                         </a>
-     
-                         <a href="/sella" className="product-card">
-                             <div className="product-card">
-                                 <div className="product-img">
-                                     <img src={rice4} alt="1121 Sella Basmati Rice" />
-                                 </div>
-                                 <div className="product-label">1121 Sella Basmati Rice</div>
-                             </div>
-                         </a>
-     
-                         <a href="/golden" className="product-card">
-                             <div className="product-card">
-                                 <div className="product-img">
-                                     <img src={golden} alt="GoldenBasmati Rice" />
-                                 </div>
-                                 <div className="product-label">Golden Basmati Rice</div>
-                             </div>
-                         </a>
-     
-                         <a href="/steam" className="product-card">
-                         <div className="product-card">
-                             <div className="product-img">
-                                 <img src={rice6} alt="1401 Basmati Rice" />
-                             </div>
-                             <div className="product-label">1509 Basmati Rice</div>
-                         </div>
-                         </a>
-     
-                         <a href="/sell" className="product-card">
-                         <div className="product-card">
-                             <div className="product-img">
-                                 <img src={rice7} alt="Sella Basmati Rice" />
-                             </div>
-                             <div className="product-label">1509 Sella Basmati Rice</div>
-                         </div>
-                         </a>
-     
-                         <a href="/gold" className="product-card">
-                         <div className="product-card">
-                             <div className="product-img">
-                                 <img src={gold} alt="Golden Rice" />
-                             </div>
-                             <div className="product-label">Golden Rice</div>
-                         </div>
-                         </a>
-     
-                     </div>
-                 </section>
+        <img src={leaf} alt="Wheat Icon" className="icon" />
+        <div className="section-header">
+          <p className="tagline">INDIAN RICE VARIETIES WE OFFER</p>
+          <h2>Our Products Range</h2>
+        </div>
+
+        <div className="product-list">
+          <a href="/basmati" className="product-card">
+            <div className="product-card">
+              <div className="product-img">
+                <img src={rice3} alt="1121 Basmati Rice" />
+              </div>
+              <div className="product-label">1121 Basmati Rice</div>
+            </div>
+          </a>
+
+          <a href="/sella" className="product-card">
+            <div className="product-card">
+              <div className="product-img">
+                <img src={rice4} alt="1121 Sella Basmati Rice" />
+              </div>
+              <div className="product-label">1121 Sella Basmati Rice</div>
+            </div>
+          </a>
+
+          <a href="/golden" className="product-card">
+            <div className="product-card">
+              <div className="product-img">
+                <img src={golden} alt="GoldenBasmati Rice" />
+              </div>
+              <div className="product-label">Golden Basmati Rice</div>
+            </div>
+          </a>
+
+          <a href="/steam" className="product-card">
+            <div className="product-card">
+              <div className="product-img">
+                <img src={rice6} alt="1401 Basmati Rice" />
+              </div>
+              <div className="product-label">1509 Basmati Rice</div>
+            </div>
+          </a>
+
+          <a href="/sell" className="product-card">
+            <div className="product-card">
+              <div className="product-img">
+                <img src={rice7} alt="Sella Basmati Rice" />
+              </div>
+              <div className="product-label">1509 Sella Basmati Rice</div>
+            </div>
+          </a>
+
+          <a href="/gold" className="product-card">
+            <div className="product-card">
+              <div className="product-img">
+                <img src={gold} alt="Golden Rice" />
+              </div>
+              <div className="product-label">Golden Rice</div>
+            </div>
+          </a>
+
+        </div>
+      </section>
 
 
       <section class="testimonial-banner">
         <div class="banner-text">
           <span>Basmati Rice Manufacturer, Supplier, Exporter in India</span>
           <a href="/">
-          <button class="view-more-btn">VIEW MORE</button>
+            <button class="view-more-btn">VIEW MORE</button>
           </a>
         </div>
       </section>
@@ -258,75 +268,52 @@ const Home = () => {
       </section>
 
       <section class="timeline-section">
-        <div class="timeline-path"></div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-box">
+        <div class="timeline-container">
+          <div class="timeline-card">
+            <img src={rice16} alt="Rice Procurement" class="card-img" />
+            <div class="card-content">
               <h3>Rice Procurement</h3>
-              <p>We Procure rice from farmers and various rice mandis including All India and Country.</p>
-            </div>
-            <div class="timeline-image">
-              <img src={rice16} alt="Rice Procurement" />
+              <p>We procure rice from farmers and various rice mandis including All India and Country.</p>
             </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-box">
+          <div class="timeline-card">
+            <img src={rice17} alt="Rice Ageing" class="card-img" />
+            <div class="card-content">
               <h3>Rice Ageing</h3>
               <p>After procurement, the rice is aged in our warehouses as per the requirement.</p>
             </div>
-            <div class="timeline-image">
-              <img src={rice17} alt="Rice Ageing" />
-            </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-box">
+          <div class="timeline-card">
+            <img src={rice18} alt="Rice Cleaning" class="card-img" />
+            <div class="card-content">
               <h3>Rice Cleaning</h3>
               <p>The rice is cleaned by undergoing various processes like de-stoning.</p>
             </div>
-            <div class="timeline-image">
-              <img src={rice18} alt="Rice Cleaning" />
-            </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-box">
-              <h3>Rice Silky &amp; Polish</h3>
+          <div class="timeline-card">
+            <img src={rice19} alt="Rice Silky & Polish" class="card-img" />
+            <div class="card-content">
+              <h3>Rice Silky & Polish</h3>
               <p>The rice is polished by spraying water through the rice chamber.</p>
             </div>
-            <div class="timeline-image">
-              <img src={rice19} alt="Rice Silky & Polish" />
-            </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-box">
-              <h3> Colour Sorter</h3>
+          <div class="timeline-card">
+            <img src={rice20} alt="Colour Sorter" class="card-img" />
+            <div class="card-content">
+              <h3>Colour Sorter</h3>
               <p>The impurities & discoloured and broken grains are sorted and separated.</p>
             </div>
-            <div class="timeline-image">
-              <img src={rice20} alt="Colour Sorter" />
-            </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-box">
+          <div class="timeline-card">
+            <img src={rice21} alt="Grading" class="card-img" />
+            <div class="card-content">
               <h3>Grading</h3>
-              <p>After going through the sorter, rice is graded in various compartments on the basic of its length.</p>
-            </div>
-            <div class="timeline-image">
-              <img src={rice21} alt="Grading" />
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-box">
-              <h3>Packaging</h3>
-              <p>The final step is to pack the rice in various quantities such as 1kg, 5kg, 10kg, 25kg, 30kg.</p>
-            </div>
-            <div class="timeline-image">
-              <img src={rice22} alt="Packaging" />
+              <p>After going through the sorter, rice is graded in various compartments on the basis of its length.</p>
             </div>
           </div>
         </div>
@@ -348,7 +335,7 @@ const Home = () => {
 
       <section className="infrastructure">
         <div className="content">
-          <div className="left">  
+          <div className="left">
             <h4>Latest & Proven Technology</h4>
             <p>
               Our manufacturing unit is equipped with ultra-modern Machinery including Automated Dryers,
@@ -361,10 +348,8 @@ const Home = () => {
             </p>
             <h4>Processing And Milling</h4>
             <p>
-              Our rice mills are a stage of art and to attain the desired quality of rice we need to use pre-cleaners,
-              de-huskers, polishers, sortex, silky, rice bins, and magnets to completely protect the food. And this
-              process leads against contamination and other impurities during the food process of milling. The natural
-              form of rice is inedible, hence there are several operations that need to be done for the final product.
+              If you are a manufacturer of export products, as a merchant exporters, we help you market your products across the globe. We assist you spread your product / brand across various geographies, by being your global representative for your products. Let us know and we will help you grow your business internationally. We work with our suppliers as “partners in progress” and help them scale-up their businesses globally.
+
             </p>
           </div>
           <div className="right">
@@ -430,7 +415,7 @@ const Home = () => {
         <div class="blog-card">
           <div class="image-container">
             <img src={food} alt="Rice" />
-            <span class="date-badge">25 Jun</span>
+            {/* <span class="date-badge">25 Jun</span> */}
           </div>
           <div class="card-content">
             <p class="admin"><i class="fa fa-user"></i> By Admin</p>
@@ -445,7 +430,7 @@ const Home = () => {
         <div class="blog-card">
           <div class="image-container">
             <img src={food3} alt="Rice Bowl" />
-            <span class="date-badge">25 Jun</span>
+            {/* <span class="date-badge">25 Jun</span> */}
           </div>
           <div class="card-content">
             <p class="admin"><i class="fa fa-user"></i> By Admin</p>
@@ -460,7 +445,7 @@ const Home = () => {
         <div class="blog-card">
           <div class="image-container">
             <img src={food2} alt="Rice Export" />
-            <span class="date-badge">25 Jun</span>
+            {/* <span class="date-badge">25 Jun</span> */}
           </div>
           <div class="card-content">
             <p class="admin"><i class="fa fa-user"></i> By Admin</p>
