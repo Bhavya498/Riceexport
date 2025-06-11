@@ -79,42 +79,6 @@ export default function Basmati() {
                 </table>
             </section>
 
-            <div class="rice-container">
-                <div class="sidebar">
-                    <h3 className="text-white">1121 Basmati Rice</h3>
-                    <ul>
-                        <a href="/basmati" className="text-white"><li>➜ 1121 Steam Basmati Rice</li></a>
-                        <a href="/sella" className="text-white"><li>➜ 1121 Sella Basmati Rice</li></a>
-                        <a href="/golden" className="text-white"><li>➜ 1121 Golden Sella Basmati Rice</li></a>
-                    </ul>
-                </div>
-
-                <div class="rice-cards">
-                    <div class="rice-card">
-                        <img src={steam} alt="Steam Basmati Rice" />
-                        <div class="card-head text-black">1121 Basmati Rice</div>
-                        <a href="/basmati" >
-                            <div class="card-subhead text-black">1121 Steam Basmati Rice</div>
-                        </a>
-                    </div>
-                    <div class="rice-card">
-                        <img src={sella} alt="Sella Basmati Rice" />
-                        <div class="card-head">1121 Basmati Rice</div>
-                        <a href="/sella">
-                            <div class="card-subhead text-black">1121 Sella Basmati Rice</div>
-                        </a>
-                    </div>
-                    <div class="rice-card">
-                        <img src={golden} alt="Golden Sella Basmati Rice" />
-                        <div class="card-head">1121 Basmati Rice</div>
-                        <a href="/golden">
-                            <div class="card-subhead text-black">1121 Golden Sella Basmati Rice</div>
-                        </a>
-                    </div>
-                </div>
-            </div><br /><br />
-
-
             <section class="spec-table-section">
                 <table class="spec-table">
                     <thead>
