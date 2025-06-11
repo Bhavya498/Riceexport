@@ -67,8 +67,9 @@ const Home = () => {
           </div>
           <h3>Grain Quality</h3>
           <p>
-            Our rice is procured from selected farms across North India, and a
-            sophisticated manufacturing process ensures good grain quality.
+           Our rice is carefully sourced from selected farms in Northern India.
+            A modern and controlled manufacturing process ensures consistently high 
+            grain quality, meeting stringent European/US standards.
           </p>
           {/* <a href="#" className="read-more">Read More</a> */}
           <span className="card-number">01</span>
@@ -80,8 +81,8 @@ const Home = () => {
           </div>
           <h3>Grain Variety</h3>
           <p>
-            To cater to different types of consumers and for varied purposes, we
-            have a wide range of rice products on offer.
+            We offer a diverse range of rice varieties to meet the preferences of 
+            different consumers and to suit a wide array of culinary applications
           </p>
           {/* <a href="#" className="read-more">Read More</a> */}
           <span className="card-number">02</span>
@@ -93,8 +94,8 @@ const Home = () => {
           </div>
           <h3>Health Benefits</h3>
           <p>
-            The staple food of North India, rice, is energy-rich, has a high
-            nutritional value and is enriched with essential vitamin.
+            Rice, a staple food in North India, is energy-rich,
+            highly nutritious, and enriched with essential vitamins.
           </p>
           {/* <a href="#" className="read-more">Read More</a> */}
           <span className="card-number">03</span>
@@ -142,7 +143,7 @@ const Home = () => {
             </div>
             <div className="feature-box blue">
               <i className="fas fa-user"></i>
-              <h3>Excellent</h3>
+              <h3 className="text-white">Excellent</h3>
               <p>Quality</p>
             </div>
           </div>
