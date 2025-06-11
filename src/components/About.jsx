@@ -67,7 +67,7 @@ export default function About() {
                     <div className="features">
                         <div className="feature-box yellow">
                             <i className="fas fa-award"></i>
-                            <h3>100%</h3>
+                            <h3 className="text-white">100%</h3>
                             <p>Organic Rice</p>
                         </div>
                         <div className="feature-box blue">
