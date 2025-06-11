@@ -9,7 +9,8 @@ import rice4 from "../Images/rice4.webp";
 import rice6 from "../Images/rice6.webp";
 import rice7 from "../Images/rice7.webp";
 import gold from "../Images/gold.jpeg";
-export default function Basmati() {
+
+export default function Sella() {
     return (
         <div>
             <div
