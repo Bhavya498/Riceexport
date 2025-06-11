@@ -10,7 +10,7 @@ import rice6 from "../Images/rice6.webp";
 import rice7 from "../Images/rice7.webp";
 import gold from "../Images/gold.jpeg";
 
-export default function Basmati() {
+export default function Steam() {
     return (
         <div>
             <div
@@ -102,38 +102,6 @@ export default function Basmati() {
                     </tbody>
                 </table>
             </section>
-
-            <div class="rice-container">
-                <div class="sidebar">
-                    <h3 className="text-white">1509 Basmati Rice</h3>
-                    <ul>
-                        <a href="/steam" className="text-white no-underline"><li>➜ 1509 Steam Basmati Rice</li></a>
-                        <li>➜ 1509 Sella Basmati Rice</li>
-                        <li>➜ 1509 Golden Sella Basmati Rice</li>
-                    </ul>
-                </div>
-
-                <div class="rice-cards">
-                    <div class="rice-card">
-                        <img src={steam} alt="Steam Basmati Rice" />
-                        <div class="card-head text-black">1509 Basmati Rice</div>
-                        <a href="/basmati" >
-                            <div class="card-subhead text-black">1509 Steam Basmati Rice</div>
-                        </a>
-                    </div>
-                    <div class="rice-card">
-                        <img src={sella} alt="Sella Basmati Rice" />
-                        <div class="card-head">1509 Basmati Rice</div>
-                        <div class="card-subhead">1509 Sella Basmati Rice</div>
-                    </div>
-                    <div class="rice-card">
-                        <img src={golden} alt="Golden Sella Basmati Rice" />
-                        <div class="card-head">1509 Basmati Rice</div>
-                        <div class="card-subhead">1509 Golden Sella Basmati Rice</div>
-                    </div>
-                </div>
-            </div><br /><br />
-
 
             <section class="spec-table-section">
                 <table class="spec-table">
