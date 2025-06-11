@@ -10,7 +10,7 @@ import rice6 from "../Images/rice6.webp";
 import rice7 from "../Images/rice7.webp";
 import gold from "../Images/gold.jpeg";
 
-export default function Basmati() {
+export default function Gold() {
     return (
         <div>
             <div
@@ -84,42 +84,7 @@ export default function Basmati() {
                 </table>
             </section>
 
-            <div class="rice-container">
-                <div class="sidebar">
-                    <h3 className="text-white">1121 Basmati Rice</h3>
-                    <ul>
-                        <a href="/steam" className="text-white"><li>➜ 1509 Steam Basmati Rice</li></a>
-                        <a href="/sell" className="text-white"><li>➜ 1509 Sella Basmati Rice</li></a>
-                        <a href="/gold" className="text-white"><li>➜ 1509 Golden Sella Basmati Rice</li></a> 
-                    </ul>
-                </div>
-
-                <div class="rice-cards">
-                    <div class="rice-card">
-                        <img src={steam} alt="Steam Basmati Rice" />
-                        <div class="card-head text-black">1509 Basmati Rice</div>
-                        <a href="/steam" >
-                            <div class="card-subhead text-black">1509 Steam Basmati Rice</div>
-                        </a>
-                    </div>
-                    <div class="rice-card">
-                        <img src={sella} alt="Sella Basmati Rice" />
-                        <div class="card-head">1509 Basmati Rice</div>
-                        <a href="/sell">
-                            <div class="card-subhead text-black">1509 Sella Basmati Rice</div>
-                        </a>
-                    </div>
-                    <div class="rice-card">
-                        <img src={golden} alt="Golden Sella Basmati Rice" />
-                        <div class="card-head">1509 Basmati Rice</div>
-                        <a href="/gold">
-                        <div class="card-subhead text-black">1509 Golden Sella Basmati Rice</div>
-                        </a>
-                    </div>
-                </div>
-            </div><br /><br />
-
-
+        
             <section class="spec-table-section">
                 <table class="spec-table">
                     <thead>
