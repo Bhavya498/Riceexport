@@ -1,5 +1,5 @@
 import React from 'react'
-import homeimg from "../Images/homeimg.webp";
+import homeimg from "../Images/homeimg.jpg";
 import rice3 from "../Images/rice3.webp";
 import rice4 from "../Images/rice4.webp";
 import rice5 from "../Images/rice5.webp";

@@ -1,6 +1,8 @@
 import React from "react";
 import { FaLinkedinIn, FaTwitter, FaFacebookF, FaInstagram, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
-import homeimg from "../Images/homeimg.webp";
+import { useState, useEffect } from "react";
+import homeimg from "../Images/homeimg.jpg";
+// import home2 from "../Images/home2.jpg";
 import rice1 from "../Images/rice1.webp";
 import rice2 from "../Images/rice2.webp";
 import rice3 from "../Images/rice3.webp";
@@ -24,16 +26,37 @@ import food3 from "../Images/food3.webp";
 import apple from "../Images/apple.png";
 import corn from "../Images/corn.png";
 import milk from "../Images/milk.png";
+import banner from "../Images/banner.jpg";
+import banner2 from "../Images/banner2.jpg";
+import banner3 from "../Images/banner3.avif";
+import banner4 from "../Images/banner4.jpg";
 
 
 const Home = () => {
+  const images = [banner, banner2, banner3, banner4];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000); // 5 seconds interval
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
-      <section
-        className="home"
-        style={{ backgroundImage: `url(${homeimg})` }}
-      >
-        {/* Overlay for better text readability */}
+      <section className="home">
+        {/* Multiple images layered with active one shown */}
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`slider-image ${index === currentIndex ? 'active' : ''}`}
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
+        ))}
+
+        {/* Overlay */}
         <div className="overlay"></div>
 
         {/* Social Icons */}
@@ -52,13 +75,12 @@ const Home = () => {
           </a>
         </div>
 
-        {/* Home Content */}
+        {/* Main Text Content */}
         <div className="home-content">
           <h1>Experience the Heritage of<br /><span>Basmati Rice</span></h1>
           <a href="/contact" className="contact-btn">CONTACT US</a>
         </div>
       </section>
-
 
       <section className="features">
         <div className="feature-card">
@@ -67,8 +89,9 @@ const Home = () => {
           </div>
           <h3>Grain Quality</h3>
           <p>
-            Our rice is procured from selected farms across North India, and a
-            sophisticated manufacturing process ensures good grain quality.
+            Our rice is carefully sourced from selected farms in Northern India.
+            A modern and controlled manufacturing process ensures consistently high
+            grain quality, meeting stringent European/US standards.
           </p>
           {/* <a href="#" className="read-more">Read More</a> */}
           <span className="card-number">01</span>
@@ -80,8 +103,8 @@ const Home = () => {
           </div>
           <h3>Grain Variety</h3>
           <p>
-            To cater to different types of consumers and for varied purposes, we
-            have a wide range of rice products on offer.
+            We offer a diverse range of rice varieties to meet the preferences
+            of different consumers and to suit a wide array of culinary applications.
           </p>
           {/* <a href="#" className="read-more">Read More</a> */}
           <span className="card-number">02</span>
@@ -93,8 +116,8 @@ const Home = () => {
           </div>
           <h3>Health Benefits</h3>
           <p>
-            The staple food of North India, rice, is energy-rich, has a high
-            nutritional value and is enriched with essential vitamin.
+            Rice, a staple food in North India, is energy-rich,
+            highly nutritious, and enriched with essential vitamins.
           </p>
           {/* <a href="#" className="read-more">Read More</a> */}
           <span className="card-number">03</span>
@@ -142,7 +165,7 @@ const Home = () => {
             </div>
             <div className="feature-box blue">
               <i className="fas fa-user"></i>
-              <h3>Excellent</h3>
+              <h3 className="text-white">Excellent</h3>
               <p>Quality</p>
             </div>
           </div>
@@ -236,34 +259,84 @@ const Home = () => {
         </div>
       </section>
 
-      <section class="testimonial-cards">
-
-        <div class="card">
-          <h3>Anono Wiliam</h3>
-          <hr />
-          <p>
-            Rice suppliers and Really very unhappy with their service scare to go overseas,
-            but I find this website when I am surfing the internet, and I am quite impressed
-            with their products and services.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Hamis Hamza</h3>
-          <hr />
-          <p>
-            Best quality parboiled rice exporters in India. I really want to appreciate
-            their service because the packages are very perfect and strong. All the bags are
-            packed in very hygienic conditions.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Tony Hanson</h3>
-          <hr />
-          <p>
-            Best Quality of Indian Rice is Delivered. I felt happy when I came to know that
-            these people are using the latest technologies, Machineries within India. I am
-            happy that I approach these People.
-          </p>
+      <section class="testimonial-slider">
+        <div class="slider-track">
+          <div class="testimonial-card">
+            <h3>John</h3>
+            <hr />
+            <p>I am truly impressed with the consistency of quality we receive from Hemant Export. Every shipment arrives exactly as specified, with all certifications in place...</p>
+          </div>
+          <div class="testimonial-card">
+            <h3>Aisha</h3>
+            <hr />
+            <p>We have worked with Hemant Export for several years and they have never disappointed. The rice quality meets our market requirements perfectly...</p>
+          </div>
+          <div class="testimonial-card">
+            <h3>Carlos</h3>
+            <hr />
+            <p>What sets Hemant Export apart is their attention to detail and excellent packaging standards. The goods arrive in perfect condition...</p>
+          </div>
+          <div class="testimonial-card">
+            <h3>Fatima</h3>
+            <hr />
+            <p>We have found Hemant Export to be a reliable supplier for premium rice varieties. Their documentation is always in order and meets all import regulations...</p>
+          </div>
+          <div class="testimonial-card">
+            <h3>Priya</h3>
+            <hr />
+            <p>I value the dedication shown by the Hemant Export team. From the initial inquiry to shipment tracking, the process is seamless...</p>
+          </div>
+          <div class="testimonial-card">
+            <h3>Ahmed</h3>
+            <hr />
+            <p>Hemant Export has proven to be a trustworthy supplier over multiple shipments. Their quality assurance practices ensure peace of mind...</p>
+          </div>
+          <div class="testimonial-card">
+            <h3>David</h3>
+            <hr />
+            <p>It is always a pleasure working with Hemant Export. They are proactive in addressing any queries and ensure that our requirements are fully met...</p>
+          </div>
+          <div class="testimonial-card">
+            <h3>Maria</h3>
+            <hr />
+            <p>The professionalism of Hemant Export is remarkable. Shipments are handled with care and documentation is always complete...</p>
+          </div>
+          <div class="testimonial-card">
+            <h3>Hassan</h3>
+            <hr />
+            <p>We have been sourcing rice from Hemant Export for some time, and they have been excellent partners. The goods are always of high quality...</p>
+          </div>
+          <div class="testimonial-card">
+            <h3>Emily</h3>
+            <hr />
+            <p>I appreciate Hemant Export for their high-quality products and excellent service. They are flexible in accommodating our special requirements...</p>
+          </div>
+              <div class="testimonial-card">
+            <h3> Raj</h3>
+            <hr />
+            <p>Working with Hemant Export has been a smooth experience. Their team takes care of everything from quality checks to shipment coordination. The rice always arrives on time and as per our needs. I look forward to continuing this strong partnership....</p>
+          </div>
+              <div class="testimonial-card">
+            <h3>Omar</h3>
+            <hr />
+            <p>The rice shipments from Hemant Export are always consistent in both quality and presentation. Their team provides thorough reports and updates, which helps us plan our operations better. We are happy to work with such a reliable supplier....</p>
+          </div>
+              <div class="testimonial-card">
+            <h3> Sophie</h3>
+            <hr />
+            <p>I have been extremely satisfied with the service from Hemant Export. They are prompt in response, clear in communication, and precise in execution. The quality of rice and packaging has always been excellent. I look forward to more business together....</p>
+          </div>
+              <div class="testimonial-card">
+            <h3>Vivek</h3>
+            <hr />
+            <p>We are very pleased with the partnership with Hemant Export. They understand our market standards and work hard to meet them. From documentation to shipment, every process is handled professionally. Their team is always supportive and efficient....</p>
+          </div>
+              <div class="testimonial-card">
+            <h3>Carlos</h3>
+            <hr />
+            <p>What sets Hemant Export apart is their attention to detail and excellent packaging standards. The goods arrive in perfect condition...</p>
+          </div>
+        
         </div>
       </section>
 
@@ -329,37 +402,42 @@ const Home = () => {
             <img src={leaf} alt="Wheat Icon" className="icon" />
             <span className="subtitle-text">OUR BENEFITS</span>
           </div>
-          <h2 className="main-heading">Infrastructure</h2>
         </div>
-      </section>
 
-      <section className="infrastructure">
         <div className="content">
           <div className="left">
-            <h4>Latest & Proven Technology</h4>
+            {/* <h4>Our Benefits</h4> */}
             <p>
-              Our manufacturing unit is equipped with ultra-modern Machinery including Automated Dryers,
-              Pre cleaners, Destoners, Precision-Sizers, Paddy Separators, De-Huskers, etc. The plant and its
-              machinery are set up by Satake-Japan which is a world leader in grain processing systems
+              At Hemant Export, we take pride in offering unmatched value to our global customers. Here’s what sets us apart:
             </p>
+            <h4>✅ Premium Quality Products</h4>
             <p>
-              producing a comprehensive range of individual machines, integrated systems, and totally engineered
-              solutions for the processing of rice.
+              We ensure the highest standards of quality in every shipment through strict quality control, third-party inspections, and certifications like USFDA, BRC, HACCP, Kosher, and Halal.
             </p>
-            <h4>Processing And Milling</h4>
+            <h4>✅ End-to-End Supply Chain Management</h4>
             <p>
-              If you are a manufacturer of export products, as a merchant exporters, we help you market your products across the globe. We assist you spread your product / brand across various geographies, by being your global representative for your products. Let us know and we will help you grow your business internationally. We work with our suppliers as “partners in progress” and help them scale-up their businesses globally.
-
+              From sourcing raw materials to final shipment, we provide seamless logistics solutions, ensuring timely deliveries and compliance with international standards.
             </p>
-          </div>
-          <div className="right">
-            <div className="image-arch">
-              <img src={machine} alt="Processing" />
-              <div className="year-label">
-                <h3>2005</h3>
-                <p>Existence<br />Since</p>
-              </div>
-            </div>
+            <h4>✅ Customized Solutions</h4>
+            <p>
+              We offer tailored packaging, labelling, and documentation as per buyer requirements to meet diverse market needs.
+            </p>
+            <h4>✅ Competitive Pricing</h4>
+            <p>
+              Thanks to our efficient operations and direct miller-to-customer approach, we provide the best prices without compromising on quality.
+            </p>
+            <h4>✅ Global Export Expertise</h4>
+            <p>
+              With decades of experience, we understand and comply with the regulations of various international markets, including Europe, the USA, and the Middle East.
+            </p>
+            <h4>✅ Reliable Customer Support</h4>
+            <p>
+              Our dedicated team ensures prompt communication and support at every stage of the order process, from inquiry to delivery.
+            </p>
+            <h4>✅ Sustainability Commitment</h4>
+            <p>
+              We promote eco-friendly practices in farming, processing, and packaging to contribute to a greener future.
+            </p>
           </div>
         </div>
       </section><br /><br />

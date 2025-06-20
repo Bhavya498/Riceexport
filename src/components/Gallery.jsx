@@ -1,6 +1,6 @@
 
 import React from 'react'
-import homeimg from "../Images/homeimg.webp";
+import homeimg from "../Images/homeimg.jpg";
 import gallery1 from '../Images/gallery1.webp';
 import gallery2 from '../Images/gallery2.webp';
 import gallery3 from '../Images/gallery3.webp';

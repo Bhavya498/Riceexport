@@ -1,5 +1,5 @@
 import React from 'react'
-import homeimg from "../Images/homeimg.webp";
+import homeimg from "../Images/homeimg.jpg";
 import logo3 from "../Images/logo3.png";
 import rice26 from "../Images/rice26.webp";
 import rice27 from "../Images/rice27.webp";
@@ -21,7 +21,7 @@ export default function Footer() {
                     </div>
 
                     <div className="footer-column">
-                        <h3>Links</h3>
+                        <h3 className='text-white'>Links</h3>
                         <ul>
                             <a href="/" className="text-white"><li>&#9658; Home</li></a>
                             <a href="/about" className="text-white"><li>&#9658; About Us</li></a>
@@ -31,7 +31,7 @@ export default function Footer() {
                     </div>
 
                     <div className="footer-column">
-                        <h3>Explore Link</h3>
+                        <h3 className='text-white'>Explore Link</h3>
                         <ul>
                             <a href="/infra" className="text-white"><li>&#9658; Infrastructure</li></a>
                             <a href="/recipes" className="text-white"><li>&#9658; Recipes</li></a>
@@ -41,7 +41,7 @@ export default function Footer() {
                     </div>
 
                     <div className="footer-column">
-                        <h3>Popular Post</h3>
+                        <h3 className='text-white'>Popular Post</h3>
                         <div className="post">
                             <img src={rice26} alt="Post" />
                             <p>Top 10 Rice Mill in Haryana</p>

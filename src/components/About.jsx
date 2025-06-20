@@ -1,5 +1,5 @@
 import React from 'react';
-import homeimg from "../Images/homeimg.webp";
+import homeimg from "../Images/homeimg.jpg";
 import rice1 from "../Images/rice1.webp";
 import rice2 from "../Images/rice2.webp";
 import rice3 from "../Images/rice3.webp";
@@ -72,7 +72,7 @@ export default function About() {
                         </div>
                         <div className="feature-box blue">
                             <i className="fas fa-user"></i>
-                            <h3>Excellent</h3>
+                            <h3 className="text-white">Excellent</h3>
                             <p>Quality</p>
                         </div>
                     </div>
@@ -184,34 +184,38 @@ export default function About() {
                 </div>
             </section>
 
-            <section class="testimonial-cards">
-
-                <div class="card">
-                    <h3>Anono Wiliam</h3>
-                    <hr />
-                    <p>
-                        Rice suppliers and Really very unhappy with their service scare to go overseas,
-                        but I find this website when I am surfing the internet, and I am quite impressed
-                        with their products and services.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3>Hamis Hamza</h3>
-                    <hr />
-                    <p>
-                        Best quality parboiled rice exporters in India. I really want to appreciate
-                        their service because the packages are very perfect and strong. All the bags are
-                        packed in very hygienic conditions.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3>Tony Hanson</h3>
-                    <hr />
-                    <p>
-                        Best Quality of Indian Rice is Delivered. I felt happy when I came to know that
-                        these people are using the latest technologies, Machineries within India. I am
-                        happy that I approach these People.
-                    </p>
+            <section class="testimonial-slider">
+                <div class="slider-track">
+                    <div class="testimonial-card">
+                        <h3>John</h3>
+                        <hr />
+                        <p>I am truly impressed with the consistency of quality we receive from Hemant Export. Every shipment arrives exactly as specified, with all certifications in place...</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Aisha</h3>
+                        <hr />
+                        <p>We have worked with Hemant Export for several years and they have never disappointed. The rice quality meets our market requirements perfectly...</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Carlos</h3>
+                        <hr />
+                        <p>What sets Hemant Export apart is their attention to detail and excellent packaging standards. The goods arrive in perfect condition...</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Fatima</h3>
+                        <hr />
+                        <p>We have found Hemant Export to be a reliable supplier for premium rice varieties. Their documentation is always in order and meets all import regulations...</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Priya</h3>
+                        <hr />
+                        <p>I value the dedication shown by the Hemant Export team. From the initial inquiry to shipment tracking, the process is seamless...</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Ahmed</h3>
+                        <hr />
+                        <p>Hemant Export has proven to be a trustworthy supplier over multiple shipments. Their quality assurance practices ensure peace of mind...</p>
+                    </div>
                 </div>
             </section>
 

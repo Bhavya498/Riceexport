@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import homeimg from "../Images/homeimg.webp";
+import homeimg from "../Images/homeimg.jpg";
 import certi1 from "../Images/certi1.webp";
 import certi2 from "../Images/certi2.webp";
 import certi3 from "../Images/certi3.webp";

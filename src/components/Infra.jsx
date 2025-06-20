@@ -1,5 +1,5 @@
 import React from 'react'
-import homeimg from "../Images/homeimg.webp";
+import homeimg from "../Images/homeimg.jpg";
 import infrastructure from "../Images/infrastructure.webp";
 import infra1 from "../Images/infra1.webp";
 import rice3 from "../Images/rice3.webp";
@@ -14,7 +14,7 @@ import golden from "../Images/golden.webp";
 export default function Infrastructure() {
     return (
         <div>
-           
+
             <div className="about-banner"
                 style={{ backgroundImage: `url(${homeimg})` }}
             >
@@ -26,63 +26,55 @@ export default function Infrastructure() {
             </div>
             <br /><br /><br />
 
-            <section class="infrastructure">
-                <h2 class="section-title">Our Infrastructure</h2>
-
-                <div class="infra-container">
-                    <div class="infra-content">
-                        <p>
-                            As we know Infrastructure is the backbone of economic growth which improves excess of basic services to boost the business.
-                            Our primary aim is to satisfy customers with our deliverables and services so that they can serve a plate with the most aromatic and quality rice.
-                            Our mill is equipped with the largest machinery and technology imported from Japan and the UK, which involves rice milling, processing, and packaging.
-                        </p>
-
-                        <h3>Procurement Process</h3>
-                        <p>
-                            Carrying the document, Evidence of Weighing, Quality Check Results Sheet, and Payment Order are the important aspects of the export.
-                            This process requires a lot of understanding and a database of rich markets.
-                            For quality assurance, we associated with intermediates i.e. Kaccha Aarti, and a chain of farmers.
-                            This intermediate helps us to procure high and premium quality rice.
-                        </p>
-                    </div>
-
-                    <div class="infra-image-box">
-                        <div class="tag-yellow">100%<br />Pure Organic Rice</div>
-                        <img src={infrastructure} alt="Mill" class="main-image" />
-                        <div class="tag-blue">Indian<br />Basmati Rice</div>
+            <section className="infrastructure-section">
+                <div className="decorative-circles">
+                    <span className="circle small"></span>
+                    <span className="circle medium"></span>
+                </div>
+                <div className="section-title">
+                    <div className="subheading">
+                        <img src={leaf} alt="Wheat Icon" className="icon" />
+                        <span className="subtitle-text">OUR BENEFITS</span>
                     </div>
                 </div>
-            </section>
 
-            <section class="process-section">
-                <div class="process-block">
-                    <h3>Processing And Milling</h3>
-                    <p>
-                        Our rice mills are a stage of art and to attain the desired quality of rice we need to use pre-cleaners, de-huskers, polishers, sortex, silky, rice bins, and magnets to completely protect the food. And this process leads against contamination and other impurities during the food process of milling. The natural form of rice is inedible, hence there are several operations that need to be done for the final product.
-                    </p>
+                <div className="content">
+                    <div className="left">
+                        {/* <h4>Our Benefits</h4> */}
+                        <p>
+                            At Hemant Export, we take pride in offering unmatched value to our global customers. Here’s what sets us apart:
+                        </p>
+                        <h4>✅ Premium Quality Products</h4>
+                        <p>
+                            We ensure the highest standards of quality in every shipment through strict quality control, third-party inspections, and certifications like USFDA, BRC, HACCP, Kosher, and Halal.
+                        </p>
+                        <h4>✅ End-to-End Supply Chain Management</h4>
+                        <p>
+                            From sourcing raw materials to final shipment, we provide seamless logistics solutions, ensuring timely deliveries and compliance with international standards.
+                        </p>
+                        <h4>✅ Customized Solutions</h4>
+                        <p>
+                            We offer tailored packaging, labelling, and documentation as per buyer requirements to meet diverse market needs.
+                        </p>
+                        <h4>✅ Competitive Pricing</h4>
+                        <p>
+                            Thanks to our efficient operations and direct miller-to-customer approach, we provide the best prices without compromising on quality.
+                        </p>
+                        <h4>✅ Global Export Expertise</h4>
+                        <p>
+                            With decades of experience, we understand and comply with the regulations of various international markets, including Europe, the USA, and the Middle East.
+                        </p>
+                        <h4>✅ Reliable Customer Support</h4>
+                        <p>
+                            Our dedicated team ensures prompt communication and support at every stage of the order process, from inquiry to delivery.
+                        </p>
+                        <h4>✅ Sustainability Commitment</h4>
+                        <p>
+                            We promote eco-friendly practices in farming, processing, and packaging to contribute to a greener future.
+                        </p>
+                    </div>
                 </div>
-
-                <div class="process-block">
-                    <h3>Drying Of The Rice At Drying Plant</h3>
-                    <p>
-                        Our company has installed a unique fully automatic and mechanized sensor-based temperature-controlled drying system with metric tonnes per hour drying capacity which ensures the consistency and uniform drying of paddy without breakage of grains while processing. Our technology avoids fungal, and bacterial infections, fermentations, and retaining of the natural aroma.
-                    </p>
-                </div>
-
-                <div class="process-block">
-                    <h3>Parboiling</h3>
-                    <p>
-                        To maintain and preserve the natural fragrance and aroma of the grains during the whole process we need to do Parboiling. The grains become free from unwanted smells and are hygienic. It’s steam for removal of the Hull and Barn layer. In this process paddy is kept for soaking for 12hrs in water and in every 4 hours needs to change water for no bacterial formation, thus ensuring the best hygienic and parboiled rice always. These steps ensure 100% quality of rice for the end user. Maintaining the temperature is an essential and crucial step as normal water hampers the taste and aroma of grains.
-                    </p>
-                </div>
-
-                <div class="process-block">
-                    <h3>Milling</h3>
-                    <p>
-                        Milling is the last and final step of the overall procedure. Our professional team of employees ensures 100% quality control, right from the procurement of paddy, milling, parboiling, the cleaning process, packaging, and logistics. The only aim of our company is to provide the best service and highly nutritious rice with exceptional quality and aroma as our company is upgrading the working system every year.
-                    </p>
-                </div>
-            </section>
+            </section><br /><br />
 
             <section class="gallery-section">
                 <div class="image-grid">
@@ -91,69 +83,69 @@ export default function Infrastructure() {
             </section>
 
             <section className="products-section">
-                           <img src={leaf} alt="Wheat Icon" className="icon" />
-                           <div className="section-header">
-                               <p className="tagline">INDIAN RICE VARIETIES WE OFFER</p>
-                               <h2>Our Products Range</h2>
-                           </div>
-           
-                           <div className="product-list">
-                               <a href="/basmati" className="product-card">
-                                   <div className="product-card">
-                                       <div className="product-img">
-                                           <img src={rice3} alt="1121 Basmati Rice" />
-                                       </div>
-                                       <div className="product-label">1121 Basmati Rice</div>
-                                   </div>
-                               </a>
-           
-                               <a href="/sella" className="product-card">
-                                   <div className="product-card">
-                                       <div className="product-img">
-                                           <img src={rice4} alt="1121 Sella Basmati Rice" />
-                                       </div>
-                                       <div className="product-label">1121 Sella Basmati Rice</div>
-                                   </div>
-                               </a>
-           
-                               <a href="/golden" className="product-card">
-                                   <div className="product-card">
-                                       <div className="product-img">
-                                           <img src={golden} alt="GoldenBasmati Rice" />
-                                       </div>
-                                       <div className="product-label">Golden Basmati Rice</div>
-                                   </div>
-                               </a>
-           
-                               <a href="/steam" className="product-card">
-                               <div className="product-card">
-                                   <div className="product-img">
-                                       <img src={rice6} alt="1401 Basmati Rice" />
-                                   </div>
-                                   <div className="product-label">1509 Basmati Rice</div>
-                               </div>
-                               </a>
-           
-                               <a href="/sell" className="product-card">
-                               <div className="product-card">
-                                   <div className="product-img">
-                                       <img src={rice7} alt="Sella Basmati Rice" />
-                                   </div>
-                                   <div className="product-label">1509 Sella Basmati Rice</div>
-                               </div>
-                               </a>
-           
-                               <a href="/gold" className="product-card">
-                               <div className="product-card">
-                                   <div className="product-img">
-                                       <img src={gold} alt="Golden Rice" />
-                                   </div>
-                                   <div className="product-label">Golden Rice</div>
-                               </div>
-                               </a>
-           
-                           </div>
-                       </section>
+                <img src={leaf} alt="Wheat Icon" className="icon" />
+                <div className="section-header">
+                    <p className="tagline">INDIAN RICE VARIETIES WE OFFER</p>
+                    <h2>Our Products Range</h2>
+                </div>
+
+                <div className="product-list">
+                    <a href="/basmati" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={rice3} alt="1121 Basmati Rice" />
+                            </div>
+                            <div className="product-label">1121 Basmati Rice</div>
+                        </div>
+                    </a>
+
+                    <a href="/sella" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={rice4} alt="1121 Sella Basmati Rice" />
+                            </div>
+                            <div className="product-label">1121 Sella Basmati Rice</div>
+                        </div>
+                    </a>
+
+                    <a href="/golden" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={golden} alt="GoldenBasmati Rice" />
+                            </div>
+                            <div className="product-label">Golden Basmati Rice</div>
+                        </div>
+                    </a>
+
+                    <a href="/steam" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={rice6} alt="1401 Basmati Rice" />
+                            </div>
+                            <div className="product-label">1509 Basmati Rice</div>
+                        </div>
+                    </a>
+
+                    <a href="/sell" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={rice7} alt="Sella Basmati Rice" />
+                            </div>
+                            <div className="product-label">1509 Sella Basmati Rice</div>
+                        </div>
+                    </a>
+
+                    <a href="/gold" className="product-card">
+                        <div className="product-card">
+                            <div className="product-img">
+                                <img src={gold} alt="Golden Rice" />
+                            </div>
+                            <div className="product-label">Golden Rice</div>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
 
         </div>
     )
